@@ -1,0 +1,92 @@
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,900,500' rel='stylesheet' type='text/css'>
+{% use "theme-core.twig" %}
+{{ block('chart_head_no_fs') }}
+<div id="chart"></div>
+<div id="footer">
+    {% if not plain %}
+    <div class="footer-left">
+        {% if source %}
+        <span data-src="{% trans " Source: " %}" class="source-block">{% trans "Source: " %}
+            {% if sourceURL %}<a target="_blank" class="source" href="{{ sourceURL }}">{% endif %}{{ source }}{% if sourceURL %}</a>{% endif %}</span> {% endif %}
+    </div>
+    <div class="footer-right">
+        <!-- {% trans "Created with" %} <a href="{{ DW_DOMAIN }}" target="_blank">Datawrapper</a> -->
+    </div>
+    {% endif %}
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')
+</script>
+<script type="text/javascript">
+var folha = {};
+folha.omniture = {
+    info: {
+        channel: 'infograficos', // nome da editoria
+        subchannel: ['Infogr%C3%A1ficos'], //caso esteja dentro de uma subeditoria
+        type: 'infograficos',
+        title: encodeURI(document.title.split(' - ')[1]), //
+        special: {
+            title: '',
+            type: ''
+        }
+    }
+};
+</script>
+<script type="text/javascript" src="http://me.jsuol.com/omtr/folhacom.js" charset="iso-8859-1"></script>
+<!--IVC -->
+<script type="text/javascript">
+var ivcUrl = ("https:" == document.location.protocol ? "https://datpdpmej1fn2.cloudfront.net/" :
+    "http://ivccftag.ivcbrasil.org.br/") + "ivc.js";;
+(function(p, l, o, w, i, n, g) {
+    if (!p[i]) {
+        p.GlobalIvcNamespace = p.GlobalIvcNamespace || [];
+        p.GlobalIvcNamespace.push(i);
+        p[i] = function() {
+            (p[i].q = p[i].q || []).push(arguments)
+        };
+        p[i].q = p[i].q || [];
+        n = l.createElement(o);
+        g = l.getElementsByTagName(o)[0];
+        n.async = 1;
+        n.src = w;
+        g.parentNode.insertBefore(n, g)
+    }
+}(window, document, "script", ivcUrl, "ivc"));
+
+window.ivc('newTracker', 'cf', 'ivccf.ivcbrasil.org.br', {
+    idWeb: '125'
+});
+
+window.ivc('trackPageView');
+</script>
+<!-- /IVC -->
+<img id="nvg_rt" src="//navdmp.com/req?acc=23947&amp;cus=101725&amp;/img=1" alt="Pixel tag">
+<!-- Chartbeat -->
+<script type='text/javascript'>
+var _sf_async_config = {};
+/** CONFIGURATION START **/
+_sf_async_config.uid = 50059;
+_sf_async_config.domain = 'folha.com.br';
+_sf_async_config.useCanonical = true;
+_sf_async_config.sections = 'arte'; //CHANGE THIS
+_sf_async_config.authors = 'Folha'; //CHANGE THIS
+/** CONFIGURATION END **/
+(function() {
+    function loadChartbeat() {
+        window._sf_endpt = (new Date()).getTime();
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+        document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() {
+            oldonload();
+            loadChartbeat();
+        };
+})();
+</script>
+<!-- Chartbeat -->
