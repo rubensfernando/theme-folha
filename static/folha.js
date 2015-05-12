@@ -10,11 +10,11 @@
             palette: ["#f7931d", "#cb6a44","#9d0520", "#2ca02c", "#d62728", "#9467bd"],
             // secondary colors, used in custom color dialog
             // this should contain colors that might be useful
-            secondary: ["#000000", '#777777', '#cccccc', '#ffd500', '#6FAA12'],
+            //secondary: ["#000000", '#777777', '#cccccc', '#ffd500', '#6FAA12'],
             context: '#aaa',
             axis: '#000000',
-            positive: '#1f77b4',
-            negative: '#d62728',
+            positive: '#f7931d',
+            negative: '#9d0520',
             background: '#ffffff'
         },
 

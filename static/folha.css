@@ -9,7 +9,7 @@ body, html {
 
 }
 
-a { color: #0088CC; }
+a { color: #000; text-decoration: none;}
 
 body.chart {
     font-family: 'Roboto', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
@@ -17,8 +17,8 @@ body.chart {
     font-size: 14px;
     margin: 0 0px;
     background: #fff;
-    border-top: 1px solid #00adef;
-    border-bottom: 1px solid #00adef;
+    /*border-top: 1px solid #00adef;
+    border-bottom: 1px solid #00adef;*/
     padding: 15px;
 }
 
@@ -131,7 +131,7 @@ a img { border:0px; }
 
 #footer {
     font-size: 11px;
-    color: #999;
+    color: #000;
     /* The footer must now cover the chart to allow
     the toggleable panel to "go up" */
     z-index: 1100;
