@@ -12,18 +12,18 @@ body, html {
 a { color: #000; text-decoration: none;}
 
 body.chart {
-    font-family: 'Roboto', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
     margin: 0 0px;
     background: #fff;
     /*border-top: 1px solid #00adef;
     border-bottom: 1px solid #00adef;*/
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 h1 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 900;
     margin: 0 0 10px;
     text-align: left;
@@ -34,13 +34,13 @@ h1 span {
 }
 
 .chart-intro {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /* NOTE: On IE, there is a border around each image which is a link */
 a img { border:0px; }
 
-.chart p { margin: 5px 0 10px!important; line-height: 17px;}
+.chart p { margin: 5px 0 10px!important; line-height: 18px;}
 
 #chart {
     margin-top: 10px;
