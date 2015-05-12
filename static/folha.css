@@ -25,7 +25,7 @@ body.chart {
 h1 {
     font-size: 18px;
     font-weight: 900;
-    margin: 0 0 10px;
+    margin: 0 0 2px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -40,7 +40,7 @@ h1 span {
 /* NOTE: On IE, there is a border around each image which is a link */
 a img { border:0px; }
 
-.chart p { margin: 5px 0 10px!important; line-height: 18px;}
+.chart p { margin: 0 0 10px!important; line-height: 18px;}
 
 #chart {
     margin-top: 10px;
@@ -131,7 +131,7 @@ a img { border:0px; }
 
 #footer {
     font-size: 11px;
-    color: #000;
+    color: #444;
     /* The footer must now cover the chart to allow
     the toggleable panel to "go up" */
     z-index: 1100;
