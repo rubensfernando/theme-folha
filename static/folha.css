@@ -33,14 +33,15 @@ h1 {
 h1 span {
 }
 
-.chart-intro {
-    font-size: 16px;
-}
-
 /* NOTE: On IE, there is a border around each image which is a link */
 a img { border:0px; }
 
 .chart p { margin: 0 0 10px!important; line-height: 18px;}
+
+.chart-intro {
+    font-size: 16px;
+    margin: 0 0 20px!important;
+}
 
 #chart {
     margin-top: 10px;
@@ -227,25 +228,25 @@ svg .axis, svg .tick, svg .grid, svg rect {
 
 .filter-links a {
     padding: 0px 10px;
-    box-shadow: 0 0 10px #ddd inset;
-    border: 1px solid #bbb;
+    box-shadow: inset rgba(0,0,0,0.06) 0 3px 1px, rgba(0,0,0,0.05) 0 0;
+    border: 1px solid #CCC;
     border-left: 0;
     display: block;
     float: left;
-    text-decoration: underline;
-    color: #666;
+    text-decoration: none;
+    color: #444;
     height: 28px;
     line-height: 28px;
-    background: #fbfbfb;
+    background: #fff;
 }
 
 .filter-links a:hover {
     background: #fff;
-    color: #0088CC;
+    color: #00adef;
 }
 
 *+html .filter-links a {  background: #eeeeee; } /** IE7 hack **/
-.filter-links a { background: #eeeeee\0/; }  /** IE8 hack **/
+.filter-links a { }  /** IE8 hack **/
 
 
 .filter-links a.active {
@@ -255,15 +256,16 @@ svg .axis, svg .tick, svg .grid, svg rect {
     background: #fff;
     cursor: default;
     text-decoration: none;
+    border-top: 1px solid #00adef;
+    border-bottom: none;
 }
 
 .filter-links a:first-child {
-    border-radius: 10px 0 0 10px;
     border-left: 1px solid #bbb;
 }
 
 .filter-links a:last-child {
-    border-radius: 0 10px 10px 0;
+    /* border-radius: 0 10px 10px 0; */
 }
 
 .filter-select {
