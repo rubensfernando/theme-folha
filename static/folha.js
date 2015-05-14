@@ -19,7 +19,8 @@
         },
 
         lineChart: {
-            fillOpacity: 0.2
+            fillOpacity: 0.2,
+            min: 0
         },
 
         vpadding: 10,

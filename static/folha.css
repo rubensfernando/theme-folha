@@ -208,6 +208,10 @@ svg .axis, svg .tick, svg .grid, svg rect {
     shape-rendering: crispEdges;
 }
 
+/* Remove a borda em gráficos de barra/colunas */
+svg rect {
+  stroke-width: 0;
+}
 
 .label.rotate90 {
     -moz-transform: rotate(-90deg);
