@@ -119,8 +119,8 @@ a img { border:0px; }
 }
 
 .dw-chart-notes {
-    font-style: italic;
     margin-bottom: 10px;
+    font-size: 12px;
 }
 
 .chart.theme-default .dw-chart-notes {
@@ -208,7 +208,7 @@ svg .axis, svg .tick, svg .grid, svg rect {
     shape-rendering: crispEdges;
 }
 
-/* Remove a borda em gráficos de barra/colunas */
+/* Remove a borda em grÃ¡ficos de barra/colunas */
 svg rect {
   stroke-width: 0;
 }
@@ -227,7 +227,8 @@ svg rect {
 
 .filter-links {
     height: 30px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    border-bottom: 1px solid #bbb;
 }
 
 .filter-links a {
@@ -242,6 +243,7 @@ svg rect {
     height: 28px;
     line-height: 28px;
     background: #fff;
+    margin: 1px 0 0;
 }
 
 .filter-links a:hover {
@@ -261,7 +263,7 @@ svg rect {
     cursor: default;
     text-decoration: none;
     border-top: 1px solid #00adef;
-    border-bottom: none;
+    border-bottom: 1px solid #fff;
 }
 
 .filter-links a:first-child {
