@@ -17,9 +17,9 @@ body.chart {
     font-size: 14px;
     margin: 0 0px;
     background: #fff;
+    padding: 7px 0;
     /*border-top: 1px solid #00adef;
     border-bottom: 1px solid #00adef;*/
-    /* padding: 15px; */
 }
 
 h1 {
@@ -41,6 +41,10 @@ a img { border:0px; }
 .chart-intro {
     font-size: 16px;
     margin: 0 0 20px!important;
+}
+
+.chart #footer {
+  bottom: initial
 }
 
 #chart {
@@ -123,11 +127,11 @@ a img { border:0px; }
     font-size: 12px;
 }
 
-.chart.theme-default .dw-chart-notes {
-    font-style: italic;
+.chart.theme-folha .dw-chart-notes {
+    /*font-style: italic;
     margin-bottom: 5px;
     position: relative;
-    margin-top: 10px;
+    margin-top: 10px;*/
 }
 
 #footer {
