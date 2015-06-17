@@ -31,12 +31,6 @@
 
     columnChart: {
       darkenStroke: 5
-    },
-    padding: {
-      left: 0,
-      right: 0,
-      bottom: 10,
-      top: 10
     }
 
   });
