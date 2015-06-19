@@ -130,6 +130,11 @@ a img { border:0px; }
     margin-bottom: 10px;
     font-size: 16px;
 }
+.dw-chart-notes img{
+    margin: 0 10px 0 0;
+    float:left;
+    max-height: 25px;
+}
 
 .chart.theme-folha .dw-chart-notes {
     /*font-style: italic;
