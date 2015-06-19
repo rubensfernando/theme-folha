@@ -43,7 +43,7 @@ a img { border:0px; }
 }
 
 .chart #footer {
-  bottom: initial
+  bottom: initial;
 }
 
 #chart {
@@ -151,9 +151,10 @@ a img { border:0px; }
     z-index: 1100;
     /* Sets the background here to propagate it to its children */
     background:transparent;
+    position:initial;
 }
 
-.chart.theme-default #footer .footer-left {
+.chart.theme-folha #footer .footer-left {
     left: 0;
 }
 
