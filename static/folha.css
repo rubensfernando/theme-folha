@@ -123,7 +123,12 @@ a img { border:0px; }
 
 .dw-chart-notes {
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 14px;
+}
+
+.dw-chart-notes h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .chart.theme-folha .dw-chart-notes {
@@ -152,7 +157,7 @@ a img { border:0px; }
     /* Vertical text align */
 }
 
-#footer .footer-right strong {
+#footer .footer-left strong {
     color: #009fe3;
 }
 
