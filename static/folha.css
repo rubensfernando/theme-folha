@@ -130,10 +130,14 @@ a img { border:0px; }
     margin-bottom: 10px;
     font-size: 16px;
 }
-.dw-chart-notes img{
+.dw-chart-notes img {
     margin: 0 10px 0 0;
     float:left;
     max-height: 25px;
+}
+
+.dw-chart-notes img.imgPeople {
+    max-height: 100px;
 }
 
 .chart.theme-folha .dw-chart-notes {
