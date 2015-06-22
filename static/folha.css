@@ -137,7 +137,8 @@ a img { border:0px; }
 }
 
 .dw-chart-notes img.imgPeople {
-    max-height: 70px;
+    max-width: 70px;
+    max-height: initial;
 }
 
 .chart.theme-folha .dw-chart-notes {
