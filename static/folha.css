@@ -18,15 +18,14 @@
     border-bottom: 1px solid #00adef;*/
 }
 
-.chart h1 {
+.chart h1,
+.chart h1 span {
+    font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-weight: 900;
     margin: 0 0 2px;
     text-align: left;
     text-transform: uppercase;
-}
-
-.chart h1 span {
 }
 
 /* NOTE: On IE, there is a border around each image which is a link */
